@@ -15,7 +15,7 @@
         //alert(checked);
         //location.href = "Index";
         //$.get('Index');
- 
+        //смотрим как работает комит. теперь повторно его коммичу
 
         $.ajax({
             url: "Get_list_of_permission_into_role", //зд вызывается метод котроллера. те папка, имя котроллера, метод
