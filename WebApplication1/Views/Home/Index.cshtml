@@ -1,0 +1,47 @@
+﻿@using WebApplication1.Models
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RBP</title>
+</head>
+<body>
+    <h3>Роли</h3>
+    <form method="get" action="~/Home/Get_Roles" target="_blank">
+        <table>
+            <tr>
+                <td><p>Введите companyId источника: </p></td>
+                <td><input type="text" name="companyId_ist" /> </td>
+                <td><p>Введите companyId назначения: </p></td>
+                <td><input type="text" name="companyId_naz" /> </td>
+            </tr>
+            <tr>
+                <td><p>Введите username источника:</p></td>
+                <td>
+                    <input type="text" name="username_ist" />
+                </td>
+                <td><p>Введите username назначения:</p></td>
+                <td>
+                    <input type="text" name="username_naz" />
+                </td>
+            </tr>
+            <tr>
+                <td><p>Введите password истоника:</p></td>
+                <td>
+                    <input type="text" name="password_ist" />
+                </td>
+                <td><p>Введите password назначения:</p></td>
+                <td>
+                    <input type="text" name="password_naz" />
+                </td>
+            </tr>
+            <tr><td><input type="submit" value="Отправить"/> </td><td></td></tr>
+        </table>
+    </form>
+</body>
+</html>

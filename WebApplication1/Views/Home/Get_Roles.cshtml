@@ -1,0 +1,41 @@
+﻿@using WebApplication1.Models
+@model List<Role>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Get_Roles</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/script.js"></script>
+</head>
+<body>
+    <div>
+        <div>
+            @if (ViewBag.role != null)
+            {
+                foreach (var role in ViewBag.role)
+                {
+                    <div style="margin-bottom:10px">
+                        <input type="checkbox" value="@role.Permission" id="@role.Id">@role.Name<Br>
+
+                        @*@foreach (var permission in role.Permission)
+                        {
+                            @permission.Id<text>, </text>
+                        }*@
+
+
+                    </div>
+                }
+                <input type="submit" value="Копировать выбранное" id="copy" />
+            }
+        </div>
+        @*@ViewData["json_param"]*@
+            </div>
+            <div id="results"></div>
+        </body>
+        </html>
